@@ -6,3 +6,17 @@ html {
     font-size: 125%;
     background: #fff;
 }
+
+p {
+    font-size: 0.75rem;
+}
+
+
+.price {
+    color: v.$green;
+}
+
+.price-change {
+    color: v.$green;
+    text-decoration: line-through;
+}

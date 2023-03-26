@@ -247,15 +247,43 @@ h2 {
   background-color: #207200;
   color: #fff;
   font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.button a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button a:visited {
+  color: #fff;
 }
 
 html {
   font-family: "Barlow", sans-serif;
   font-size: 125%;
   background: #fff;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+.price {
+  color: #207200;
+}
+
+.price-change {
+  color: #207200;
+  text-decoration: line-through;
 }
 
 header {
@@ -372,4 +400,113 @@ header h1 {
 
 header p {
   font-size: 0.75rem;
+}
+
+.about-us .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.about-us-text-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about-us .box-text {
+  text-align: left;
+  margin: 0 auto;
+  background: #207200;
+  color: #fff;
+  width: 350px;
+  height: 150px;
+  margin-left: 50px;
+  padding-top: 25px;
+  padding-left: 20px;
+  border-radius: 10px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.our-products {
+  margin-top: 175px;
+}
+
+.text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.text-container h3 {
+  margin: 0 auto;
+}
+
+.our-products .block-wrapper {
+  display: grid;
+  margin: 0 auto;
+  gap: 5px;
+  row-gap: 30px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: 50% 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+.block {
+  width: 170px;
+}
+
+.block .text {
+  border: 2px solid whitesmoke;
+}
+
+.block .image {
+  width: 170px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.our-products .box-text {
+  background-color: #207200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block .text {
+  margin-top: -5px;
+  margin-bottom: -15px;
+  padding-bottom: 20px;
+}
+
+.cart {
+  text-transform: none;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
 }

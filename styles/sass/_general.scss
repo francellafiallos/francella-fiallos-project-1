@@ -18,10 +18,25 @@ h2 {
 }
 
 .button {
-    background-color: v.$green;
+    background-color: #207200;
     color: #fff;
-    font-family: v.$primary-font;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.button a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button a:visited {
+    color: #fff;
 }
