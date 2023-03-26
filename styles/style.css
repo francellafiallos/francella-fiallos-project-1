@@ -225,3 +225,151 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #207200;
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+html {
+  font-family: "Barlow", sans-serif;
+  font-size: 125%;
+  background: #fff;
+}
+
+header {
+  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/header/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header .nav-wrapper {
+  background-color: #fff;
+  padding: 5px;
+  -webkit-box-shadow: 3px 3px 5px silver;
+          box-shadow: 3px 3px 5px silver;
+}
+
+header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+nav li {
+  margin: 0 20px;
+  font-size: 0.7rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #1A2428;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+nav a img {
+  width: 20px;
+  height: 20px;
+}
+
+a:visited {
+  color: #1A2428;
+}
+
+.logo img {
+  -webkit-filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
+          filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
+  width: 3.5rem;
+  height: auto;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 75px;
+}
+
+.hero-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+}
+
+.hero-image-container {
+  width: 60%;
+}
+
+.hero-image-container img {
+  width: 100%;
+}
+
+header .button {
+  width: 100px;
+}
+
+header h1 {
+  font-size: 1.75rem;
+}
+
+header p {
+  font-size: 0.75rem;
+}

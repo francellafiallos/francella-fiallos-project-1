@@ -1,1 +1,8 @@
-@use 'setup';
+@use "./setup";
+@use "./variables";
+@use "./general";
+@use "./typography";
+@use "./header";
+@use "./nav";
+@use "./logo";
+@use "./hero";

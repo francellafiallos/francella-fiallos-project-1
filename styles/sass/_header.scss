@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 header {
     background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/header/background.png);
     background-size: cover;
@@ -5,8 +7,13 @@ header {
     height: 100vh;
  }
 
-header .wrapper {
+header .nav-wrapper {
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 3px 3px 5px silver;
+}
+
+header .nav-container {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
- }
+}
