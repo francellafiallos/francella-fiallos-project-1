@@ -523,11 +523,15 @@ header p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: initial;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .gallery .text-container {
   margin-top: 150px;
+}
+
+.categories {
+  padding: 0 60px;
 }
 
 .category-items {
@@ -549,6 +553,7 @@ header p {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  margin-top: 30px;
 }
 
 .first-row {
@@ -567,4 +572,16 @@ header p {
 
 .second-row-image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.third-row {
+  width: 32%;
+}
+
+.third-row-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

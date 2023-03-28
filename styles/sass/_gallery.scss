@@ -5,11 +5,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .gallery .text-container {
     margin-top: 150px;
+}
+
+.categories {
+    padding: 0 60px;
 }
 
 .category-items {
@@ -22,6 +26,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    margin-top: 30px;
 }
 
 .first-row {
@@ -39,4 +44,14 @@
 
 .second-row-image {
     width: 100%;
+    object-fit: cover;
+}
+
+.third-row {
+    width: 32%;
+}
+
+.third-row-image {
+    width: 100%;
+    object-fit: cover;
 }
