@@ -267,6 +267,11 @@ h2 {
   color: #fff;
 }
 
+.button p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 html {
   font-family: "Barlow", sans-serif;
   font-size: 125%;
@@ -380,10 +385,12 @@ a:visited {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40%;
+  min-width: 310px;
 }
 
 .hero-image-container {
   width: 60%;
+  min-width: 465px;
 }
 
 .hero-image-container img {
@@ -509,4 +516,55 @@ header p {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 100px;
+}
+
+.gallery {
+  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/grass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+  height: 100vh;
+}
+
+.gallery .text-container {
+  margin-top: 150px;
+}
+
+.category-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.first-row {
+  width: 32%;
+}
+
+.first-row-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.second-row {
+  width: 49%;
+}
+
+.second-row-image {
+  width: 100%;
 }

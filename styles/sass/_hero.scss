@@ -9,10 +9,12 @@
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    min-width: 310px;
 }
 
 .hero-image-container {
     width:60%;
+    min-width: 465px;
 }
 
 .hero-image-container img {
