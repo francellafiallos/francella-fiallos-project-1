@@ -1,0 +1,50 @@
+@use './variables' as v;
+
+.latest-news {
+    background: v.$green;
+}
+
+.latest-news .text-container {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.news-blocks {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.news-block {
+    background: v.$white;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px -2px black;
+}
+
+.news-block .image-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blog-image {
+    background: v.$white;
+}
+
+.blog-image {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.news-block h5 {
+    margin: 15px 0 15px 0; 
+}
+
+.text {
+    margin: 0px 10px 30px 10px;
+}
+
+.read-more {
+    text-transform:capitalize;
+}
