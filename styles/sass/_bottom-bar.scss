@@ -22,12 +22,6 @@
     border-radius: 50%;
 }
 
-.bottom-bar .container-one {
-    display: flex;
-    gap: 40px;
-    flex-basis: 50%;
-}
-
 .bottom-bar .social-media {
     display: flex;
     justify-content: space-between;
@@ -38,7 +32,11 @@
 }
 
 .logo-and-socials-container {
-    width: 49%;
+    width: 25%;
+}
+
+.quick-links-container {
+    flex-basis: 25%;
 }
 
 .quick-links-container h5 {
@@ -46,12 +44,8 @@
     margin-bottom: 0px;
 }
 
-.bottom-bar .container-two {
-    display: flex;
-}
-
 .recent-products {
-    flex-basis: 50%;
+    flex-basis: 25%;
     margin-right: 0px;
     margin-left: -10px;
     padding-right: 0px;
@@ -111,7 +105,7 @@
 }
 
 .subscribe {
-    flex-basis: 50%;
+    flex-basis: 25%;
 }
 
 .subscribe .text-container {

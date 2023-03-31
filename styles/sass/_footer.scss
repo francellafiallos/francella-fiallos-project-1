@@ -1,0 +1,22 @@
+@use './variables' as v;
+
+
+footer {
+    margin-top: -60px;
+}
+
+.footer-container {
+    width: 1200px;
+}
+
+.footer-container img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    bottom: -50px;
+    object-fit: none;
+}
+
+footer p {
+    text-align: center;
+}
