@@ -4,13 +4,32 @@ html {
     font-family: v.$primary-font;
     // font-family: v.$secondary-font;
     font-size: 125%;
-    background: #fff;
+    background: v.$white;
 }
 
 p {
     font-size: 0.75rem;
+    line-height: 1.5;
 }
 
+h1 {
+    font-family: v.$secondary-font;
+}
+
+h2 {
+    font-family: v.$secondary-font;
+}
+
+h3 {
+    font-family: v.$secondary-font;
+    color: v.$white;
+}
+
+h5 {
+    font-family: v.$secondary-font;
+    font-size: 0.75rem;
+    margin: 0px;
+}
 
 .price {
     color: v.$green;

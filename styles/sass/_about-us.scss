@@ -2,26 +2,47 @@
 
 .about-us .wrapper {
     display: flex;
-    padding-top: 50px;
+    padding-top: 75px;
     @media screen and (max-width: 1024px) {
         flex-direction: column;
     }
-}
-
-.about-us-text-container {
-    flex-basis: 50%
-}
-
-.about-us .box-text {
-    text-align: left;
-    margin: 0 auto;
-    background: v.$green;
-    color: v.$white;
-    width: 350px;
-    height: 150px;
-    margin-left: 50px;
-    padding-top: 25px;
-    padding-left: 20px;
-    border-radius: 10px;
-    flex-basis: 50%;
+    .about-us-text-container {
+        flex-basis: 50%;
+    }
+    .box-text {
+        text-align: left;
+        margin: 0 auto;
+        background: v.$light-green;
+        color: v.$white;
+        width: 350px;
+        height: 150px;
+        margin-left: 50px;
+        padding-top: 25px;
+        padding-left: 20px;
+        border-radius: 20px;
+        flex-basis: 50%;  
+    }
+    h2 {
+        margin: 10px 0 0 0;
+        letter-spacing: 1px;
+        line-height: 1.25;
+    }
+    h3 {
+        font-weight: 100;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    h5 {
+        letter-spacing: 1px;
+    }
+    p {
+        margin: 20px 0 0 0;
+    }
+    .button {
+        margin: 20px 0 0 0;
+        p {
+            margin: 0px;
+        }
+    }
 }

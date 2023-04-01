@@ -3,20 +3,20 @@
 
 footer {
     margin-top: -60px;
+    .footer-container {
+        width: 1280px;
+        img {
+            width: 100%;
+            z-index: -1;
+            position: relative;
+            bottom: -50px;
+            object-fit: none;
+        }
+        p {
+            text-align: center;
+            color: v.$white;
+            margin: 10px 0 0 0; 
+        }
+    }
 }
 
-.footer-container {
-    width: 1200px;
-}
-
-.footer-container img {
-    width: 100%;
-    z-index: -1;
-    position: relative;
-    bottom: -50px;
-    object-fit: none;
-}
-
-footer p {
-    text-align: center;
-}
