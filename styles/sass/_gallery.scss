@@ -6,11 +6,11 @@
     background-repeat: no-repeat;
     background-position: initial;
     min-height: 100vh;
+    .text-container {
+        margin-top: 150px;
+    }
 }
 
-.gallery .text-container {
-    margin-top: 150px;
-}
 
 .categories {
     padding: 0 60px;

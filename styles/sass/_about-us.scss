@@ -2,7 +2,10 @@
 
 .about-us .wrapper {
     display: flex;
-    padding-top: 50px
+    padding-top: 50px;
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 }
 
 .about-us-text-container {

@@ -1,17 +1,11 @@
 @use './variables' as v;
 
+.bottom-bar {
+    margin-top: 50px;
+}
+
 .bottom-bar .logo img {
     filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
-}
-
-.logo-text {
-    line-height: 2;
-}
-
-.bottom-bar .wrapper {
-    display: flex;
-    margin-top: 100px;
-    gap: 40px;
 }
 
 .social-media img {
@@ -22,49 +16,48 @@
     border-radius: 50%;
 }
 
-.bottom-bar .social-media {
+.logo-text {
+    line-height: 2;
+} 
+
+.bottom-bar-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.social-media-container {
-    margin-top: 30px;
+.bottom-bar-wrapper h5 {
+    margin-top: 0px;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .logo-and-socials-container {
-    width: 25%;
+    width: 45%;
+}
+
+.social-media-container ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 .quick-links-container {
-    flex-basis: 25%;
+    width: 49%;
 }
 
-.quick-links-container h5 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+.pages a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    line-height: 3;
 }
 
-.recent-products {
-    flex-basis: 25%;
-    margin-right: 0px;
-    margin-left: -10px;
-    padding-right: 0px;
-}
-
-.recent-products-container {
+.container-two {
     display: flex;
-    flex-direction: column;
-    margin-right: -35px;
-}
-
-.container-two h5 {
-    margin-top: 0px;
-}
-
-.lettuce,
-.bean,
-.olives {
-    width: 70px;
+    justify-content: space-between;
+    width: 49%;
 }
 
 .recent-products-list {
@@ -73,42 +66,26 @@
     gap: 15px;
 }
 
-.fresh-products {
+.recent-products-list li {
     display: flex;
+    gap: 10px
+}
+
+.recent-products img {
+    width: 70px;
 }
 
 .fresh-products p {
     margin-bottom: 0px;
     margin-top: 0px;
-}
+} 
 
 .fresh-products-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
-}
-
-.pages {
-    line-height: 3;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 15px;
-}
-
-.pages a {
-    text-decoration: none;
-}
-
-.pages li {
-    font-size: 0.75rem;
 }
 
 .subscribe {
-    flex-basis: 25%;
-}
-
-.subscribe .text-container {
-    padding: 0px;
-    text-align: left;
-}
+    width: 40%;
+} 
