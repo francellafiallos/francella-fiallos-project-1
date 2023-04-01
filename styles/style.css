@@ -291,7 +291,7 @@ p {
   text-decoration: line-through;
 }
 
-header {
+.main-header {
   background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/header/background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -790,4 +790,122 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.overlay {
+  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-blend-mode: overlay;
+  background-size: contain;
+  height: 260px;
+}
+
+.header-image img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.header-text-container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 260px;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-weight: 100;
+}
+
+.contact-main .contact-main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact-main .contact-main-wrapper h3 {
+  margin-top: 0px;
+}
+
+.contact-info-container {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.contact-form-container {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -webkit-box-shadow: 0px 0px 3px silver;
+          box-shadow: 0px 0px 3px silver;
+  padding: 25px 25px 0px 25px;
+}
+
+.contact-field {
+  -webkit-box-shadow: 0px 0px 3px silver;
+          box-shadow: 0px 0px 3px silver;
+  border-left: solid 5px green;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+
+.contact-field h3, p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.contact-field h3 {
+  margin-bottom: 10px;
+}
+
+.form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#full-name {
+  width: 50%;
+}
+
+#email-address {
+  width: 50%;
+}
+
+#phone-number {
+  width: 50%;
+}
+
+#website-link {
+  width: 50%;
+}
+
+#subject-line {
+  width: 100%;
+}
+
+.contact-form-container .button {
+  margin: 25px auto;
 }
