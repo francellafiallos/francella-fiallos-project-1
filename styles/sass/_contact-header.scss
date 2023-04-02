@@ -3,22 +3,22 @@
 .overlay {
     background:url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     background-blend-mode: overlay;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     height: 260px;
+    .header-text-container h1 { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+        color: v.$white;
+        font-family: 'Lora', serif;
+        font-weight: 100;
+    }
 }
 
-.header-image img {
-    width: 100%;   
-    opacity: 0.5;
-}
 
-.header-text-container h1 { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 260px;
-    color: v.$white;
-    font-family: 'Lora', serif;
-    font-weight: 100;
-}
+
+
