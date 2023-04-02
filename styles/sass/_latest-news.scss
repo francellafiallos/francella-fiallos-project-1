@@ -51,7 +51,27 @@
     }
 }
 
+/* media queries */ 
 
+@media (max-width: 810px) {
+    .news-blocks {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+}
 
-
-
+@media (max-width: 375px) {
+    .latest-news .wrapper {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .text-container {
+            display: flex;
+        }
+        .news-blocks {
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}

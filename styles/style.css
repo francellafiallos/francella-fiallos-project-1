@@ -342,7 +342,9 @@ nav {
       -ms-flex-pack: column;
           justify-content: column;
 }
-
+nav .nav-icon {
+  display: none;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,29 +357,35 @@ nav ul {
           align-items: center;
   font-family: "Barlow", sans-serif;
 }
-
-nav li {
+nav ul li {
   margin: 0 20px;
   font-size: 0.7rem;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
-
-nav a {
+nav ul li a {
   color: #1A2428;
   text-decoration: none;
   font-family: "Barlow", sans-serif;
 }
-nav a img {
+nav ul li a img {
   width: 20px;
   height: 20px;
 }
-
-a:visited {
+nav ul li a:visited {
   color: #1A2428;
 }
 
+@media (max-width: 1024px) {
+  li {
+    display: none;
+  }
+  nav .nav-icon {
+    display: block;
+    margin: auto;
+  }
+}
 .logo img {
   -webkit-filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
           filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
@@ -392,8 +400,7 @@ a:visited {
   position: relative;
   top: 75px;
 }
-
-.hero-text-container {
+.hero-wrapper .hero-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,43 +414,56 @@ a:visited {
   width: 40%;
   min-width: 310px;
 }
-
-.hero-image-container {
-  width: 60%;
-  min-width: 400px;
-}
-
-.hero-image-container img {
-  width: 100%;
-}
-
-header .button {
+.hero-wrapper .hero-text-container .button {
   margin: 30px 0 0 0;
   width: 100px;
 }
-
-header h1 {
+.hero-wrapper .hero-text-container h1 {
   font-size: 1.75rem;
   line-height: 1.5;
 }
-
-header p {
-  margin: 20px 0 0 0;
+.hero-wrapper .hero-text-container p {
+  margin: 0px;
+}
+.hero-wrapper .hero-image-container {
+  width: 60%;
+  min-width: 400px;
+}
+.hero-wrapper .hero-image-container img {
+  width: 100%;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  .hero-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-wrapper .button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .hero-wrapper {
+    position: relative;
+    top: 300px;
+  }
+  .hero-wrapper .hero-image-container img {
+    display: none;
+  }
+}
 .about-us .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 75px;
-}
-@media screen and (max-width: 1024px) {
-  .about-us .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 .about-us .wrapper .about-us-text-container {
   -ms-flex-preferred-size: 50%;
@@ -487,6 +507,29 @@ header p {
   margin: 0px;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  .about-us .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-us .wrapper .box-text {
+    margin: 0 auto 50px;
+  }
+  .about-us .wrapper .about-us-text-container {
+    text-align: center;
+  }
+  .about-us .wrapper .about-us-text-container .button {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 375px) {
+  .box-text {
+    display: none;
+  }
+}
 .our-products {
   margin-top: 175px;
 }
@@ -567,6 +610,21 @@ header p {
   width: 125px;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  .our-products .block-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .our-products .wrapper {
+    width: 100%;
+  }
+}
 .gallery {
   background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/grass.jpg);
   background-size: contain;
@@ -663,6 +721,56 @@ header p {
   padding-bottom: 100px;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  .gallery .category-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .gallery .category-items .button {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .gallery .image-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery .image-gallery li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .gallery .image-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery .image-gallery li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
 .latest-news {
   background: #207200;
 }
@@ -724,6 +832,41 @@ header p {
   border-radius: 3px;
 }
 
+/* media queries */
+@media (max-width: 810px) {
+  .news-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .latest-news .wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .latest-news .wrapper .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .latest-news .wrapper .news-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 .bottom-bar {
   margin-top: 50px;
 }
@@ -862,6 +1005,114 @@ header p {
   font-size: 0.7rem;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  .bottom-bar li {
+    display: block;
+  }
+}
+@media (max-width: 810px) {
+  .bottom-bar li {
+    display: block;
+  }
+  .bottom-bar-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 810px) {
+  .bottom-bar .wrapper .bottom-bar-wrapper .container-one {
+    width: 100%;
+  }
+  .bottom-bar .wrapper .bottom-bar-wrapper .container-two {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .bottom-bar .bottom-bar-wrapper {
+    width: 100%;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .logo-and-socials-container {
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .logo-and-socials-container .social-media-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 0 0 0;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container h5 {
+    text-align: center;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container .pages .more-quick-links {
+    text-align: end;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-two .recent-products-container {
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-two .recent-products-container .recent-products-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .bottom-bar .bottom-bar-wrapper .container-two .subscribe {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 0 0;
+  }
+}
 footer {
   margin-top: -60px;
 }
@@ -882,6 +1133,12 @@ footer .footer-container p {
   margin: 10px 0 0 0;
 }
 
+/* media queries */
+@media (max-width: 1024px) {
+  footer p {
+    text-align: center;
+  }
+}
 .overlay {
   background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));

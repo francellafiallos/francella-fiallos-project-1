@@ -110,9 +110,115 @@
     
 }
 
+/* media queries */ 
+
+@media (max-width: 1024px) {
+    .bottom-bar {
+        li {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .bottom-bar {
+        li {
+            display: block;
+        }
+    }
+    .bottom-bar-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        // .container-one {
+        //     display: flex;
+        // }
+        // .logo-and-socials-container {
+        //     width: 100%;
+        // }
+
+        // .quick-links-container {
+        //     width: 100%;
+        //     .pages {
+        //         display: flex;
+        //     }
+        // }
+        }
+    }
+
+@media (max-width: 810px) {
+    .bottom-bar .wrapper .bottom-bar-wrapper .container-one {
+        width: 100%;
+    }
+    .bottom-bar .wrapper .bottom-bar-wrapper .container-two {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .bottom-bar .bottom-bar-wrapper {
+        width: 100%;
+    }
+
+    .bottom-bar .bottom-bar-wrapper .container-one {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-bar .bottom-bar-wrapper .container-one .logo-and-socials-container {
+        width: 100%;
+        text-align: center;
+        .social-media-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        h5 {
+            text-align: center;
+        }
+        .pages {
+            display: flex;
+            justify-content: space-between;
+            .more-quick-links {
+                text-align: end;
+            }
+        }
+    }
+    .bottom-bar .bottom-bar-wrapper .container-two {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-bar .bottom-bar-wrapper .container-two .recent-products-container {
+        width: 100%;
+        text-align: center;
+        .recent-products-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+
+    .bottom-bar .bottom-bar-wrapper .container-two .subscribe {
+        width: 100%;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+}
 
 
-
-
-
-
+// .container-one {
+            //     display: flex;
+            //     .quick-links-container {
+            //         display: flex; 
+            //         flex-direction: column;
+            //             .li {
+            //                     display: block;
+            //                 }quick-links {
+                            
+            //             }
+            //     }
+            // }

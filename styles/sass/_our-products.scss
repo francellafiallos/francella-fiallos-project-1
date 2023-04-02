@@ -67,4 +67,18 @@
     }
 }
  
+/* media queries */ 
+
+@media (max-width: 1024px) {
+    .our-products .block-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px) {
+    .our-products .wrapper {
+        width: 100%;
+    }
+}
 

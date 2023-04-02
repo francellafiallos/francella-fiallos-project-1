@@ -3,34 +3,42 @@
 nav {
     display: flex;
     justify-content: column;
-}
-
-nav ul {
+    .nav-icon {
+        display: none;
+    }
+    ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: v.$primary-font;
-}
-
-nav li {
-    margin: 0 20px; 
-    font-size: 0.7rem;
-    font-family: v.$primary-font;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-nav a {
-    color: v.$black;
-    text-decoration: none;
-    font-family: v.$primary-font;
-    img {
-        width: 20px;
-        height: 20px;
+        li {
+        margin: 0 20px; 
+        font-size: 0.7rem;
+        font-family: v.$primary-font;
+        font-weight: 600;
+        text-transform: uppercase;
+        a {
+            color: v.$black;
+            text-decoration: none;
+            font-family: v.$primary-font;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        a:visited {
+            color: v.$black;
+        }
+        }   
     }
 }
 
-a:visited {
-    color: v.$black;
+@media (max-width: 1024px) {
+    li {
+        display: none;
+    }
+    nav .nav-icon {
+        display: block;
+        margin: auto;
+    }
 }
-
