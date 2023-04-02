@@ -199,6 +199,11 @@
             flex-direction: column;
             justify-content: center;
             margin: 0 auto;
+            .fresh-products-text {
+                span {
+                    text-align: left;
+                }
+            }
         }
     }
 

@@ -23,9 +23,34 @@ footer {
 /* media queries */
 
 @media (max-width: 1024px) {
-    footer p {
-        text-align: center;
+    footer .footer-container {
+        width: 1024px;
+        p {
+            margin: 20px 0 0;
+        }
     }
 }
    
-     
+@media (max-width: 810px) {
+    footer .footer-container {
+        width: 810px;
+        p {
+            color: v.$black;
+            margin: 20px 0 0;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer .footer-container {
+        width: 375px; 
+        p {
+            color: v.$black;
+            margin: 100px 0 0;
+            background: v.$green;
+        }
+        img {
+            display: none;
+        }
+    }
+}

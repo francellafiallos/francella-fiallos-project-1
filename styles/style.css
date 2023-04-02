@@ -1107,6 +1107,9 @@ nav ul li a:visited {
             justify-content: center;
     margin: 0 auto;
   }
+  .bottom-bar .bottom-bar-wrapper .container-two .recent-products-container .recent-products-list .fresh-products-text span {
+    text-align: left;
+  }
   .bottom-bar .bottom-bar-wrapper .container-two .subscribe {
     width: 100%;
     text-align: center;
@@ -1135,8 +1138,33 @@ footer .footer-container p {
 
 /* media queries */
 @media (max-width: 1024px) {
-  footer p {
-    text-align: center;
+  footer .footer-container {
+    width: 1024px;
+  }
+  footer .footer-container p {
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 810px) {
+  footer .footer-container {
+    width: 810px;
+  }
+  footer .footer-container p {
+    color: #1A2428;
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 375px) {
+  footer .footer-container {
+    width: 375px;
+  }
+  footer .footer-container p {
+    color: #1A2428;
+    margin: 100px 0 0;
+    background: #207200;
+  }
+  footer .footer-container img {
+    display: none;
   }
 }
 .overlay {
