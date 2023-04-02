@@ -38,6 +38,9 @@ footer {
             color: v.$black;
             margin: 20px 0 0;
         }
+        img {
+            object-fit: contain;
+        }
     }
 }
 
@@ -48,9 +51,16 @@ footer {
             color: v.$black;
             margin: 100px 0 0;
             background: v.$green;
+            text-align: center;
         }
         img {
             display: none;
         }
+    }
+}
+
+@media (max-width: 320px) {
+    footer .footer-container p {
+        text-align: center;
     }
 }

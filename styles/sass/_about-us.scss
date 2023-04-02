@@ -2,7 +2,7 @@
 
 .about-us .wrapper {
     display: flex;
-    padding-top: 75px;
+    padding: 75px 0 0;
     .about-us-text-container {
         flex-basis: 50%;
     }
@@ -13,9 +13,8 @@
         color: v.$white;
         width: 350px;
         height: 150px;
-        margin-left: 50px;
-        padding-top: 25px;
-        padding-left: 20px;
+        margin: 0 0 0 50px;
+        padding: 25px 0 0 20px;
         border-radius: 20px;
         flex-basis: 50%;  
     }
@@ -35,6 +34,7 @@
     }
     p {
         margin: 20px 0 0 0;
+        line-height: 1.5;
     }
     .button {
         margin: 20px 0 0 0;

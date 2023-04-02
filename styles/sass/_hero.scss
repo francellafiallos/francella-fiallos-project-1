@@ -1,5 +1,6 @@
 @use './variables';
 
+
 .hero-wrapper {
     display: flex;
     position: relative;
@@ -15,21 +16,22 @@
             width: 100px;
         }
         h1 {
-            font-size: 1.75rem;
-            line-height: 1.5;
+            margin: 0 0 15px 0;
         }
         p {
-            margin: 0px;
+            margin: 0
         }
     }
     .hero-image-container {
-        width:60%;
-        min-width: 400px;
+        width: 60%;
+        min-width: 50%;
         img {
-            width:100%;
+            width: 100%;
         }
     }
 }
+
+
 
 /* media queries */ 
 
@@ -47,8 +49,10 @@
     .hero-wrapper {
         position: relative;
         top: 300px;
-        .hero-image-container img {
+        .hero.image.container img {
             display: none;
         }
     }
 }
+
+
