@@ -316,7 +316,7 @@ h5 {
 }
 
 .main-header {
-  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/header/background.png);
+  background: url(../organic-project/assets/header/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -628,7 +628,7 @@ nav ul li a:visited {
   }
 }
 .gallery {
-  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/grass.jpg);
+  background: url(../organic-project/assets/grass.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1180,8 +1180,8 @@ footer .footer-container p {
   }
 }
 .overlay {
-  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
-  background: url(/Users/Newuser/Documents/Juno/week-3/project-1/francella-fiallos-project-1/organic-project/assets/contact.jpg), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: url(../organic-project/assets/contact.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: url(../organic-project/assets/contact.jpg), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: no-repeat;
