@@ -336,7 +336,30 @@ h5 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.nav-wrapper .nav-container .nav-icon {
+  display: none;
+}
+.nav-wrapper .nav-container .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.nav-wrapper .nav-container .nav-items .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
+@media (max-width: 1024px) {
+  .nav-wrapper .nav-container .nav-icon {
+    display: block;
+    margin: 8px 0 0 0;
+  }
+}
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,9 +367,6 @@ nav {
   -webkit-box-pack: column;
       -ms-flex-pack: column;
           justify-content: column;
-}
-nav .nav-icon {
-  display: none;
 }
 nav ul {
   display: -webkit-box;
@@ -381,12 +401,85 @@ nav ul li a:visited {
 }
 
 @media (max-width: 1024px) {
-  li {
+  nav,
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-item {
     display: none;
   }
-  nav .nav-icon {
-    display: block;
-    margin: auto;
+}
+@media (max-width: 1024px) {
+  .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .header-wrapper .nav-wrapper .wrapper .nav-container .nav-items .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-icon a,
+  .nav-items a {
+    position: relative;
+    color: black;
+  }
+  .nav-icon a::before,
+  .nav-items a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #207200;
+    bottom: 0;
+    left: 0;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .nav-items a:hover::before,
+  .nav-icon a:hover::before {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .nav-icon a:visited {
+    color: black;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-bar-toggle-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .logo img {
@@ -402,6 +495,38 @@ nav ul li a:visited {
   display: flex;
   position: relative;
   top: 75px;
+}
+.hero-wrapper .pop-up {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 770px;
+  width: 500px;
+  height: 250px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.hero-wrapper .pop-up .pop-up-content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero-wrapper .pop-up .pop-up-content .shop-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .hero-wrapper .hero-text-container {
   display: -webkit-box;

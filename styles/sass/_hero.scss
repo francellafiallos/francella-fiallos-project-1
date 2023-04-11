@@ -5,6 +5,27 @@
     display: flex;
     position: relative;
     top: 75px;
+    .pop-up {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        max-width: 770px;
+        width: 500px;
+        height: 250px;
+        background-color: whitesmoke;
+        border-radius: 5px; 
+        .pop-up-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .shop-button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
     .hero-text-container {
         display: flex;
         flex-direction: column;

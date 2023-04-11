@@ -18,31 +18,52 @@
             <div class="nav-wrapper">
                 <div class="wrapper">
                     <div class="nav-container">
-                        <div class="logo">
-                            <img src="organic-project/assets/logo.png" alt="Logo for Organic.">
-                        </div>
-                        <nav>
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                                <li><a href=""><img src="organic-project/assets/icons/cart.svg" alt="An icon representing a shopping cart." class="cart"></a></li>
-                            </ul>
-                            <div class="nav-icon">
-                                <i class="fa-solid fa-bars" alt="An icon representing a menu"></i>
+
+                        <!-- new items for assignment 2 purposes-->
+
+                        <div class="nav-items">
+                            <div class="logo">
+                                <img src="organic-project/assets/logo.png" alt="Logo for Organic.">
                             </div>
-                        </nav>
+                            <nav>
+                                <ul class="menu">
+                                    <li><a class="menu-item" href="./index.html">Home</a></li>
+                                    <li><a class="menu-item" href="./blog.html">Blog</a></li>
+                                    <li><a class="menu-item" href="./contact.html">Contact</a></li>
+                                    <li><a class="menu-item" href=""><img src="organic-project/assets/icons/cart.svg" alt="An icon representing a shopping cart." class="cart"></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="nav-icon">
+                            <a href="#" class="icon"><i class="fa-solid fa-bars" alt="An icon representing a menu"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="wrapper">
                 <div class="hero-wrapper">
+                    <div class="pop-up">
+                        <div class="pop-up-content">
+                            <h3>We're having a kale sale!</h3>
+                            <p>Save 20 per cent off of this superfood! Buy some today!</p>
+                            <div class="shop-button-container">
+                                <div name="shop-pop-up" class="button" ><p><a href="#" class="shop-pop">Shop Now</a></p></div>
+                            </div>
+
+                            <div class="close">
+                                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- new assignment 2 items end -->
+
                     <div class="hero-text-container">
                         <h1>Providing Tasty & Healthy Food</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, sapiente dolore cumque, aut vero veritatis laboriosam tempore, enim vel error dolor nulla atque aliquam reiciendis sit possimus quaerat cupiditate?</p>
                         <div class="button">
-                            <p>Shop Now</p>
+                            <p><a href ="#" class="shop">Shop Now</a></p>
                         </div>
                     </div>
                     <div class="hero-image-container">
@@ -456,6 +477,62 @@
             <p>Copyright &copy; 2023. All Rights Reserved</p>
         </div>
     </footer> 
+
+    <script>
+
+        // click on hamburger menu
+        // triggers nav bar to expand downwards to show other options
+
+        function classToggle () {
+
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            menuItems.forEach(event => event.classList.toggle('nav-bar-toggle-show'));
+
+        }
+
+        document.querySelector('.nav-icon')
+            .addEventListener('click', classToggle);
+
+        const shop = document.querySelector('.shop')
+
+        const koolThing = function(event) {
+            if(event.type = 'mouseleave') {
+                event.target.style.background = 'chartreuse';
+            }
+            if(event.type != 'mouseover') {
+                event.target.style.background = 'none';
+            }
+        }
+
+        shop.addEventListener('mouseleave', koolThing);
+        shop.addEventListener('mouseover', koolThing);
+
+
+        // find shop on the document
+        // addEventListener on click when you click on shop 
+        // find pop-up
+        // trigger pop-up
+        // addEventListener on 'x'
+
+
+        const popUp = document.querySelector('.pop-up');
+       
+        const close = document.querySelector('.close');
+        
+        shop.addEventListener('click', function(){
+            popUp.style.display = 'block'
+        })
+
+        close.addEventListener('click', function(){
+            popUp.style.display = 'none';
+        })
+       
+
+        // nav JavaScript was modeled after a tutorial from  FreeCodeCamp and hover CSS styling to CSS tricks!
+        // understand completely if it's beyond the scope of the assignment but would be open to receiving feedback!
+
+    </script>
 
 </body>
 </html>

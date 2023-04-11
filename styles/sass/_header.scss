@@ -13,8 +13,29 @@
         .nav-container {
             display: flex;
             justify-content: space-between;
+            .nav-icon {
+                display: none;
+            }
+            .nav-items {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .menu {
+                    display: flex;
+                }
+            }
         }
     }
+
+@media (max-width: 1024px) {
+
+    .nav-wrapper .nav-container .nav-icon {
+        display: block;
+        margin: 8px 0 0 0;
+    }
+
+
+}
     
 
 
