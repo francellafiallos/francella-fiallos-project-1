@@ -4,7 +4,7 @@
 footer {
     margin-top: -60px;
     .footer-container {
-        width: 1280px;
+        width: fit-content;
         img {
             width: 100%;
             z-index: -1;
@@ -24,7 +24,7 @@ footer {
 
 @media (max-width: 1024px) {
     footer .footer-container {
-        width: 1024px;
+        width: fit-content;
         p {
             margin: 20px 0 0;
         }
@@ -33,7 +33,7 @@ footer {
    
 @media (max-width: 810px) {
     footer .footer-container {
-        width: 810px;
+        width: fit-content;
         p {
             color: v.$black;
             margin: 20px 0 0;
@@ -46,7 +46,7 @@ footer {
 
 @media (max-width: 375px) {
     footer .footer-container {
-        width: 375px; 
+        width: fit-content; 
         p {
             color: v.$black;
             margin: 100px 0 0;
